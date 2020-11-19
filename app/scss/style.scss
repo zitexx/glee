@@ -176,6 +176,7 @@
   &__form-input {
     background-color: rgba(252, 215, 182, 0.2);
     outline: transparent;
+    padding: 9px 0;
     transition: all 1s;
   }
 
@@ -187,7 +188,6 @@
   &__form-input,
   &__form-btn {
     border: none;
-    padding: 9px 0;
     transition: all 0.5s;
   }
 
