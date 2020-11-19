@@ -11,10 +11,9 @@
 }
 
 .logo {
-  align-items: center;
   font-size: 36px;
   line-height: 1.611;
-  color: $default;
+  color: $default !important;
   @extend %Rubik-500;
 
   &__text {
@@ -27,13 +26,28 @@
   line-height: 0.8;
 
   &__item:not(:last-child) {
-    padding-right: 35px;
+    padding-right: 30px;
 
   }
 
   &__link {
     @extend %Rubik-500;
     color: #436372;
+    transition: all 1s;
+  }
+
+  &__link--active::after,
+  &__link::after {
+    content: "+";
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  &__link--active:hover::after,
+  &__link:hover::after {
+    padding-right: 5px;
+    padding-left: 3px;
+    opacity: 1;
 
   }
 }
@@ -41,10 +55,9 @@
 .icons-inner,
 .user-menu,
 .menu__list,
-.logo {
+.logo,
+  {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .search,
@@ -94,6 +107,118 @@
     text-align: center;
     @extend %DMSans-500;
     color: $default;
+  }
+}
+
+.footer {
+  font-size: 14px;
+  line-height: 1.5;
+  @extend %Rubik-500;
+  color: #7b7b7b;
+
+  & a {
+    color: #7b7b7b;
+    text-decoration: none;
+  }
+
+  &__top {
+    display: flex;
+    padding: 75px 0;
+    border-bottom: 1px solid rgba(163, 187, 200, 0.4);
+  }
+
+  &__top p:not(:last-child),
+  &__item {
+    margin-bottom: 17px;
+  }
+
+  &__block {
+    width: 270px;
+  }
+
+  &__contact {
+    max-width: 200px;
+  }
+
+  &__contact span {
+    text-transform: uppercase;
+    display: inline;
+  }
+
+  &__contact {
+    font-style: normal;
+  }
+
+  &__logo {
+    margin-bottom: 27px;
+  }
+
+  &__title {
+    margin: 23px 0 29px;
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 1.313;
+    text-transform: uppercase;
+    color: #1f2044;
+  }
+
+  &__form {
+    margin-top: 38px;
+    width: max-content;
+
+  }
+
+  &__form-input {
+    background-color: rgba(252, 215, 182, 0.2);
+    outline: transparent;
+    transition: all 1s;
+  }
+
+  &__form-input:focus,
+  &__form-btn:focus {
+    outline: 1px solid #7b7b7b;
+  }
+
+  &__form-input,
+  &__form-btn {
+    border: none;
+    padding: 14px 16px;
+    transition: all 0.5s;
+  }
+
+  &__form-btn {
+    background-color: rgb(163, 187, 200);
+    font-size: 14px;
+    @extend %DMSans-500;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+  }
+
+  &__form-input::placeholder {
+    font-size: 12px;
+    @extend %DMSans-500;
+    color: rgb(35, 73, 105);
+    line-height: 1.2;
+  }
+
+  &__bottom {
+    padding: 33px 0 10px;
+  }
+
+  &__bottom,
+  &__menu-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu-item {
+    padding: 0 15px;
+    border-right: 1px solid #7b7b7b;
+  }
+
+  &__menu-item:last-child {
+    padding-right: 0;
+    border: none;
   }
 }
 
