@@ -176,8 +176,9 @@
   &__form-input {
     background-color: rgba(252, 215, 182, 0.2);
     outline: transparent;
-    padding: 9px 0;
     transition: all 1s;
+    max-width: 170px;
+
   }
 
   &__form-input:focus,
@@ -189,6 +190,7 @@
   &__form-btn {
     border: none;
     transition: all 0.5s;
+    padding: 9px 14px;
   }
 
   &__form-btn {
@@ -197,15 +199,14 @@
     @extend %DMSans-500;
     line-height: 1.5;
     color: rgb(255, 255, 255);
-    padding: 9px 14px;
+
   }
 
   &__form-input::placeholder {
     font-size: 12px;
     @extend %DMSans-500;
     color: rgb(35, 73, 105);
-    line-height: 1.2;
-    padding: 13px;
+    padding: auto;
   }
 
   &__bottom {
