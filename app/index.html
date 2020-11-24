@@ -12,20 +12,19 @@
 
   <header class="header">
 
-    <div class="container-big">
+    <div class="container container--big">
 
-      <div class="header__inner">
+      <div class="header__inner di-flex">
 
         <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="Logo">
-          <span class="logo__text">Glee.</span>
+          <img class="logo__img" src="images/logo.png" alt="Logo">
         </a>
 
         <nav class="menu">
-          <ul class="menu__list">
+          <ul class="menu__list di-flex">
 
             <li class="menu__item">
-              <a class="menu__link menu__link--active" href="#">Home</a>
+              <a class="menu__link menu__link--active" href="#">Home +</a>
             </li>
 
             <li class="menu__item">
@@ -37,7 +36,7 @@
             </li>
 
             <li class="menu__item">
-              <a class="menu__link" href="#">Pages</a>
+              <a class="menu__link" href="#">Pages +</a>
             </li>
 
             <li class="menu__item">
@@ -51,25 +50,33 @@
           </ul>
         </nav>
 
-        <div class="icons-inner">
+        <div class="icons-inner di-flex">
 
-          <a class="search" href="#" style="background-image: url('images/icons/search.svg')">
-            <!-- <img class="search__img" src="images/icons/search.svg" alt="search icon"> -->
-          </a>
+          <button class="btn__circle btn__circle-search btn" type="button">
+            <svg class="btn__circle-svg">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
 
-          <div class="user-menu">
-            <a class="user-menu__link" href="#">
-              <img class="user-menu__img" src="images/icons/bookmarks.png" alt="bookmarks icon">
+          <div class="user-menu di-flex">
+            <button class="btn__user-menu btn" type="button">
+              <svg class="btn__circle-svg">
+                <use xlink:href="images/sprite.svg#bookmarks"></use>
+              </svg>
               <span class="user-menu__num">0</span>
-            </a>
-            <a class="user-menu__link" href="#">
-              <img class="user-menu__img" src="images/icons/card.svg" alt="heart icon">
+            </button>
+            <button class="btn__user-menu btn" type="button">
+              <svg class="btn__circle-svg">
+                <use xlink:href="images/sprite.svg#card"></use>
+              </svg>
               <span class="user-menu__num">0</span>
-            </a>
+            </button>
           </div>
 
-          <button class="menu-mini" type="button" style="background-image: url('images/icons/menu.svg')">
-            <!-- <img src="images/icons/menu.svg" alt="menu icon"> -->
+          <button class="btn__circle btn__circle-menu btn" type="button">
+            <svg class="btn__circle-svg btn__circle-svg--big">
+              <use xlink:href="images/sprite.svg#menu"></use>
+            </svg>
           </button>
 
         </div>
@@ -90,14 +97,14 @@
 
     <div class="container">
 
-      <div class="footer__top">
+      <div class="footer__top di-flex">
 
         <div class="footer__block">
 
-          <a class="logo footer__logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="Logo">
-            <span class="logo__text">Glee.</span>
+          <a class="logo" href="#">
+            <img class="logo__img footer__logo" src="images/logo.png" alt="Logo">
           </a>
+
 
           <address class="footer__contact">
             <p><span>address: </span>4772 Wines Lane
@@ -172,15 +179,19 @@
             update protidin.</p>
 
           <form class="footer__form" action="#">
-            <input class="footer__form-input" type="email" placeholder="Email address" required>
-            <button class="footer__form-btn" type="submit">Subscribe</button>
+            <input class="footer__form-input" id="email" name="subscribe[email]" type="email"
+              placeholder="Email address" required>
+            <label for="email">
+              <button class="footer__form-btn" type="submit">Subscribe</button>
+            </label>
+
           </form>
         </div>
 
       </div>
 
       <div class="footer__bottom">
-        <p> ©2020 CopyRight Example. All rights reserved. </p>
+        <p>&copy;2020 CopyRight Example. All rights reserved. </p>
         <div class="footer__menu">
           <ul class="footer__menu-list">
 

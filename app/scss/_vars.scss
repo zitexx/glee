@@ -1,4 +1,7 @@
 $default: #243f4d;
+$btn: #a3bbc8;
+$text: #7b7b7b;
+$bg-other: #fef7f0;
 
 %DMSans-400 {
   font-family: 'DM Sans', sans-serif;
@@ -23,4 +26,9 @@ $default: #243f4d;
 %Rubik-500 {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
+}
+
+%Rubik-400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
 }

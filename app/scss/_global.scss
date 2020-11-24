@@ -4,6 +4,12 @@ body {
 }
 
 body {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.4;
+  @extend %DMSans-400;
+  color: $text;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
 }
@@ -12,14 +18,41 @@ body {
   flex-grow: 1;
 }
 
-.container-big {
-  max-width: 1800px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  &--big {
+    max-width: 1800px;
+  }
+}
+
+.di-flex {
+  display: flex;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &__circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-top: 4px;
+    background-color: #fff;
+    fill: $btn;
+
+    &-svg {
+      width: 18px;
+      height: 18px;
+
+      &--big {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 }

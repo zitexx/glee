@@ -12,6 +12,7 @@ const uglify = require('gulp-uglify') // минификация js файлов
 const browserSync = require('browser-sync').create() //обновление страницы браузера при изменении файлов
 const imagemin = require('gulp-imagemin') //работа с изображениями
 const del = require('del') //удаление папки dist перед записью
+const svgSprite = require('gulp-svg-sprite')
 
 function browsersync() {
   browserSync.init({
@@ -75,6 +76,24 @@ function images() {
     .pipe(dest('dist/images'))
 }
 
+//CSS Sprite
+function svgsprite() {
+  return src('app/sprite/*.svg')
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../sprite.svg" //sprite file name
+        },
+        dimension: { // Dimension related options
+          attributes: true, // Width and height attributes on embedded shapes
+        },
+      },
+    }))
+    .pipe(dest('app/images'));
+
+}
+
+
 //перенесение файлов в готовый проект
 function build() {
   return src([
@@ -108,5 +127,6 @@ exports.watching = watching
 exports.images = images
 exports.clearDist = clearDist
 exports.build = series(clearDist, images, build)
+exports.sprite = svgsprite
 
 exports.default = parallel(styles, scripts, browsersync, watching)
