@@ -1,6 +1,9 @@
-@import 'vars'; //переменный для цвета и шрифта, кусочки кода
-@import 'fonts';
-@import 'reset';
-@import 'global'; // глобальные стили
-@import 'components/header';
-@import 'components/footer';
+@import 'base/vars'; //переменный для цвета и шрифта, кусочки кода
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/global'; // глобальные стили
+@import 'base/libs';
+@import 'sections/header';
+@import 'components/home-slider';
+@import 'components/gallery';
+@import 'sections/footer';

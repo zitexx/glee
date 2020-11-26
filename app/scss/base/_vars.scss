@@ -1,0 +1,66 @@
+//BASE
+$default: #243f4d;
+$text: #7b7b7b;
+$bg-other: #fef7f0;
+$h2-color: #191919;
+
+// BUTTON 
+$btn-cycle: #a3bbc8;
+$btn-cycle-bg: #fff;
+
+$btn-link-color: $default;
+$btn-link-bg: transparent;
+
+//INFO BLOCK
+$info-icon-color: #bbcbd3;
+
+//GALLARY
+$product-title: $default;
+$product-price: #a3bbc8;
+
+@mixin btn-cycle($bg-color, $fill) {
+  background-color: $bg-color;
+  fill: $fill;
+}
+
+@mixin btn-link ($border, $border-radius, $bg, $color) {
+  border: $border;
+  border-radius: $border-radius;
+  color: $color;
+  background-color: $bg;
+
+  &::after {
+    background-color: $color;
+  }
+}
+
+
+%DMSans-400 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+
+%DMSans-500 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+%DMSans-700 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+}
+
+%poppins-700 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+%Rubik-500 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+%Rubik-400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
