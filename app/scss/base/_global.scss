@@ -100,9 +100,18 @@ body {
 }
 
 button {
-  outline: transparent
+  outline: transparent;
 }
 
+a {
+  color: $text;
+  transition: color 0.3s;
+
+
+  &:hover {
+    color: $h2-color;
+  }
+}
 
 h2 {
   font-size: 36px;
