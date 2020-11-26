@@ -22,6 +22,12 @@ $gallery-product-bg: #fff;
 $gallery-design-bg:#f8f8f8;
 $gallery-design-bg-cover:$bg-other;
 
+//BANNER
+$banner-bg: $bg-other;
+$banner-title: $default;
+$banner-text: $default;
+
+
 
 //MIXIN
 @mixin btn-cycle($bg-color, $fill) {

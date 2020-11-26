@@ -83,10 +83,10 @@
 
     &-item {
       min-height: 246px;
-      padding: 35px;
+      padding: 28px 35px;
       background-color: $gallery-design-bg;
       background-repeat: no-repeat;
-      background-position: 100px 100px;
+      background-position: 100px 90px;
       border-radius: 10px;
       transition: background-color 0.3s;
 
@@ -110,7 +110,7 @@
       color: $design-title;
       line-height: 1.2;
       max-width: 180px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     &-text {
