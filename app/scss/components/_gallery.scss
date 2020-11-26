@@ -32,7 +32,6 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // grid-template-rows: repeat(auto, 1fr);
     grid-gap: 40px 30px;
 
     &-item {
@@ -75,9 +74,49 @@
       @extend %DMSans-700;
       color: $product-price;
     }
-
   }
 
+  &__design {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 30px;
+
+    &-item {
+      min-height: 246px;
+      padding: 35px;
+      background-color: $gallery-design-bg;
+      background-repeat: no-repeat;
+      background-position: 100px 100px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+
+      &--ver2 {
+        background-position: 80% center;
+      }
+
+      &--ver3 {
+        background-position: 90% center;
+      }
+
+      &:hover {
+        background-color: $gallery-design-bg-cover;
+      }
+
+    }
+
+    &-title {
+      font-size: 20px;
+      @extend %DMSans-700;
+      color: $design-title;
+      line-height: 1.2;
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      @extend .gallery__product-price
+    }
+  }
 }
 
 .mixitup-control-active {
