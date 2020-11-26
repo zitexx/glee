@@ -14,6 +14,7 @@ const imagemin = require('gulp-imagemin') //работа с изображени
 const del = require('del') //удаление папки dist перед записью
 const svgSprite = require('gulp-svg-sprite')
 
+
 function browsersync() {
   browserSync.init({
     server: {
@@ -42,6 +43,7 @@ function styles() {
 function scripts() {
   return src(['node_modules/jquery/dist/jquery.js',
       'node_modules/slick-carousel/slick/slick.js',
+      'node_modules/mixitup/dist/mixitup.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -91,8 +93,11 @@ function svgsprite() {
       },
     }))
     .pipe(dest('app/images'));
-
 }
+
+
+
+
 
 
 //перенесение файлов в готовый проект

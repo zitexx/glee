@@ -14,10 +14,13 @@ $btn-link-bg: transparent;
 //INFO BLOCK
 $info-icon-color: #bbcbd3;
 
-//GALLARY
+//GALLERY
 $product-title: $default;
 $product-price: #a3bbc8;
+$gallery-product-bg: #fff;
 
+
+//MIXIN
 @mixin btn-cycle($bg-color, $fill) {
   background-color: $bg-color;
   fill: $fill;

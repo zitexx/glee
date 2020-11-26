@@ -181,25 +181,25 @@
 
         <ul class="gallery__menu di-flex">
           <li class="gallery__item">
-            <a class="gallery__link" href="#">All</a>
+            <button class="gallery__link btn" data-filter="all">All</button>
           </li>
           <li class="gallery__item">
-            <a class="gallery__link" href="#">Furnitures</a>
+            <button class="gallery__link btn" data-filter=".cat-a">Furnitures</button>
           </li>
           <li class="gallery__item">
-            <a class="gallery__link" href="#">Chairs</a>
+            <button class="gallery__link btn" data-filter=".cat-b">Chairs</button>
           </li>
           <li class="gallery__item">
-            <a class="gallery__link" href="#">Lighting</a>
+            <button class="gallery__link btn" data-filter=".cat-c">Lighting</button>
           </li>
           <li class="gallery__item">
-            <a class="gallery__link" href="#">Decor</a>
+            <button class="gallery__link btn" data-filter=".cat-d">Decor</button>
           </li>
         </ul>
 
         <div class="gallery__product">
 
-          <div class="gallery__product-item di-flex" style="background-image: url('images/gallery/1.png');">
+          <div class="gallery__product-item di-flex mix cat-a" style="background-image: url('images/gallery/1.png');">
             <div class="gallery__product-btn">
               <button class="btn__circle btn" type="button">
                 <svg class="btn__circle-svg btn__circle-svg--big">
@@ -217,12 +217,12 @@
                 </svg>
               </button>
             </div>
-            <!-- <img class="gallery__product-img" src="images/gallery/1.png" alt="gallery image"> -->
             <p class="gallery__product-title">Wooden radio</p>
             <p class="gallery__product-price">$29.00</p>
           </div>
 
-          <div class="gallery__product-item di-flex" style="background-image: url('images/gallery/2.png');">
+          <div class="gallery__product-item di-flex mix cat-d cat-a"
+            style="background-image: url('images/gallery/2.png');">
             <div class="gallery__product-btn">
               <button class="btn__circle btn" type="button">
                 <svg class="btn__circle-svg btn__circle-svg--big">
@@ -244,7 +244,8 @@
             <p class="gallery__product-price">$29.00</p>
           </div>
 
-          <div class="gallery__product-item di-flex" style="background-image: url('images/gallery/3.png');">
+          <div class="gallery__product-item di-flex mix cat-d cat-a"
+            style="background-image: url('images/gallery/3.png');">
             <div class="gallery__product-btn">
               <button class="btn__circle btn" type="button">
                 <svg class="btn__circle-svg btn__circle-svg--big">
@@ -266,7 +267,8 @@
             <p class="gallery__product-price">$29.00</p>
           </div>
 
-          <div class="gallery__product-item di-flex" style="background-image: url('images/gallery/4.png');">
+          <div class="gallery__product-item di-flex mix cat-b cat-a"
+            style="background-image: url('images/gallery/4.png');">
             <div class="gallery__product-btn">
               <button class="btn__circle btn" type="button">
                 <svg class="btn__circle-svg btn__circle-svg--big">
@@ -288,7 +290,7 @@
             <p class="gallery__product-price">$29.00</p>
           </div>
 
-          <div class="gallery__product-item di-flex" style="background-image: url('images/gallery/5.png');">
+          <div class="gallery__product-item di-flex mix cat-a" style="background-image: url('images/gallery/5.png');">
             <div class="gallery__product-btn">
               <button class="btn__circle btn" type="button">
                 <svg class="btn__circle-svg btn__circle-svg--big">
@@ -310,7 +312,7 @@
             <p class="gallery__product-price">$29.00</p>
           </div>
 
-          <div class="gallery__product-item di-flex" style="background-image: url('images/gallery/6.png');">
+          <div class="gallery__product-item di-flex mix cat-c" style="background-image: url('images/gallery/6.png');">
             <div class="gallery__product-btn">
               <button class="btn__circle btn" type="button">
                 <svg class="btn__circle-svg btn__circle-svg--big">
@@ -332,7 +334,7 @@
             <p class="gallery__product-price">$29.00</p>
           </div>
 
-          <div class="gallery__product-item di-flex" style="background-image: url('images/gallery/7.png');">
+          <div class="gallery__product-item di-flex mix cat-b" style="background-image: url('images/gallery/7.png');">
             <div class="gallery__product-btn">
               <button class="btn__circle btn" type="button">
                 <svg class="btn__circle-svg btn__circle-svg--big">
@@ -354,7 +356,7 @@
             <p class="gallery__product-price">$29.00</p>
           </div>
 
-          <div class="gallery__product-item di-flex" style="background-image: url('images/gallery/8.png');">
+          <div class="gallery__product-item di-flex mix cat-c" style="background-image: url('images/gallery/8.png');">
             <div class="gallery__product-btn">
               <button class="btn__circle btn" type="button">
                 <svg class="btn__circle-svg btn__circle-svg--big">
