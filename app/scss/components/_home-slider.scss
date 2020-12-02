@@ -1,24 +1,17 @@
-// .slider-icon {
-//   width: 634px;
-//   height: 634px;
-//   background-color: #000;
-// }
-
-.slider {
+.home-slider {
   position: relative;
-  margin: 0 15px;
+  z-index: 0;
+  background-color: #fcd7b6;
+  max-width: 1770px;
+  margin: 0 auto;
 
   &::before {
     content: url('../../images/slider-home/bg.png');
     position: absolute;
     top: 100px;
-    right: 185px;
-  }
-
-  &__container {
-    background-color: #fcd7b6;
-    max-width: 1770px;
-    margin: 0 auto;
+    right: 0;
+    margin-right: 245px;
+    z-index: 0;
   }
 
   .slick-dots {
@@ -39,6 +32,7 @@
       margin-right: 10px;
       transition: background-color 0.4s;
       outline: transparent;
+      cursor: pointer;
     }
   }
 
@@ -81,88 +75,15 @@
   &__link {
     @include btn-link (none, 0px, $btn-cycle, #fff);
 
-    &:hover {
-      @include btn-link (none, 0px, #fff, $btn-cycle);
-    }
-
     &:focus {
       outline: 1px solid $text;
       outline-offset: -1px;
     }
-  }
 
-}
-
-.info {
-  display: flex;
-  justify-content: center;
-  background-color: #fef7f0;
-
-  &__item {
-    padding: 46px 46px 46px 230px;
-    position: relative;
-    width: 100%;
-
-    &:not(:last-child) {
-      border-right: 1px solid #e8e4df;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50px;
-      left: 230-30-59px;
-      width: 50px;
-      height: 50px;
-      background-color: $info-icon-color;
-    }
-
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   bottom: 50%;
-    //   left: 230-59px;
-    //   width: 20px;
-    //   height: 20px;
-    //   background-color: $info-icon-color;
-    //   mask: url('../../images/sprite.svg#ellipse') no-repeat 50% 50%;
-    // }
-
-    &-time {
-      &::after {
-        mask: url('../../images/sprite.svg#time') no-repeat 50% 50%;
-      }
-    }
-
-
-    &-delivery {
-      &::after {
-        mask: url('../../images/sprite.svg#delivery') no-repeat 50% 50%;
-      }
-    }
-
-    &-pay {
-      &::after {
-        mask: url('../../images/sprite.svg#pay') no-repeat 50% 50%;
-      }
-    }
-  }
-
-  &__title {
-    font-size: 18px;
-    @extend %DMSans-700;
-    color: #414141;
-  }
-
-  &__text {
-    font-size: 16px;
-    @extend %DMSans-500;
-    line-height: 1.9;
-    max-width: 215px;
-
-    &:nth-child(2) {
-      max-width: 225px;
+    &:hover {
+      @include btn-link (none, 0px, #fff, $btn-cycle);
     }
 
   }
+
 }

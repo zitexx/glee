@@ -48,6 +48,11 @@ select {
   font: inherit;
 }
 
-a[class] {
+a {
   text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: transparent;
 }

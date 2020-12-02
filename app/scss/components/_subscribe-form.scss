@@ -1,0 +1,38 @@
+.subscribe-form {
+  margin-top: 38px;
+
+  &__label {
+    font-size: 0;
+  }
+
+  &__input {
+    background-color: $bg-other;
+    outline: transparent;
+    max-width: 170px;
+    border: none;
+    padding: 9px 17px;
+    margin-left: -5px;
+
+    &::placeholder {
+      font-size: 12px;
+      @extend %DMSans-500;
+      color: #234969;
+    }
+
+    &:focus {
+      outline: 1px solid $text;
+    }
+  }
+
+  &__btn {
+    background-color: $btn-cycle;
+    @extend %DMSans-500;
+    line-height: 1.5;
+    color: #fff;
+    @extend .subscribe-form__input;
+
+    &:focus {
+      @extend .subscribe-form__input:focus
+    }
+  }
+}

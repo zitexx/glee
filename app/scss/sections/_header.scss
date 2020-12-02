@@ -28,37 +28,25 @@
 
 .icons-inner {
   margin-top: 5px;
-}
 
-.btn {
-  &__circle {
-    &-menu {
-      @include btn-cycle($btn-cycle, #fff);
+  &__search {
+    margin-right: 20px;
+    @include btn-cycle(#edf1f4, $default);
+  }
 
-      & .btn__circle-svg {
-        transition: all 0.6s;
-      }
+  &__menu {
+    @include btn-cycle($btn-cycle, #fff);
 
-      &:hover .btn__circle-svg {
-        transform: rotate(180deg);
-
-      }
+    & .btn__svg {
+      transition: all 0.6s;
     }
 
-    &-search {
-      margin-right: 20px;
-      @include btn-cycle(#edf1f4, $default);
+    &:hover .btn__svg {
+      transform: rotate(180deg);
+
     }
   }
 
-  &__user-menu {
-    position: relative;
-    padding: 7px 30px 0;
-
-    &:not(:last-child) {
-      border-right: 1px solid rgba(255, 255, 255, 0.4);
-    }
-  }
 }
 
 .user-menu {
@@ -80,5 +68,14 @@
     text-align: center;
     @extend %DMSans-500;
     color: $default;
+  }
+
+  &__button {
+    position: relative;
+    padding: 7px 30px 0;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(255, 255, 255, 0.4);
+    }
   }
 }

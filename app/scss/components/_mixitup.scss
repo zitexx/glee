@@ -1,0 +1,27 @@
+.mix-menu {
+  justify-content: center;
+  margin-bottom: 80px;
+
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 1.2;
+    @extend %DMSans-700;
+    color: #8b8b8b;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #191919;
+    }
+  }
+
+  .mixitup-control-active {
+    color: #191919;
+  }
+}

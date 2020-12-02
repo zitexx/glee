@@ -1,0 +1,61 @@
+.article {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+
+  &__content {
+    margin: -10px 30px 15px;
+  }
+
+  &__hr {
+    border: none;
+    color: #e0e0e0;
+    background-color: #e0e0e0;
+    height: 1px;
+  }
+
+  &__about {
+    padding: 9px 4px;
+  }
+
+  &__author {
+    text-transform: uppercase;
+    @extend %Rubik-400;
+    color: #222933;
+    font-size: 12px;
+  }
+
+  &__date {
+    @extend .article__author;
+  }
+
+  &__link-date {
+    margin: 0 25px 0 13px;
+  }
+
+  &__link-author {
+    @extend .article__link-date
+  }
+
+  &__img {
+    max-height: 250px;
+    width: 100%;
+  }
+
+  &__stick {
+    padding: 5px 30px;
+    background-color: rgb(163, 187, 200);
+    border-radius: 25px;
+    text-transform: uppercase;
+    @extend %poppins-700;
+    color: #fff;
+  }
+
+  &__title {
+    padding: 25px 2px 5px;
+    max-width: 295px;
+    min-height: 95px;
+
+  }
+}

@@ -1,0 +1,16 @@
+.clients {
+  padding: 263px 0 90px;
+  background-color: $bg-other;
+  margin-top: -172px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+
+  }
+}
+
+.client__logo:not(:last-child) {
+  margin-right: 99px;
+}

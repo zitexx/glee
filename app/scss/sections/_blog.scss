@@ -1,0 +1,36 @@
+.blog {
+  padding-top: 110px;
+
+  &__inner {
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 45px;
+  }
+
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  .view-all {
+    font-size: 16px;
+    @extend %DMSans-700;
+    color: #262626;
+    line-height: 1.7;
+    padding-right: 25px;
+    position: relative;
+
+    &::after {
+      content: url('../../images/sprite.svg#arrow_all');
+      position: absolute;
+      width: 13px;
+      right: 0;
+    }
+  }
+}

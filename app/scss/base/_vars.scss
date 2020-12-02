@@ -3,6 +3,7 @@ $default: #243f4d;
 $text: #7b7b7b;
 $bg-other: #fef7f0;
 $h2-color: #191919;
+$h5-color: #262626;
 
 // BUTTON 
 $btn-cycle: #a3bbc8;
@@ -16,9 +17,9 @@ $info-icon-color: #bbcbd3;
 
 //GALLERY
 $product-title: $default;
-$design-title: #1a1a1a;
 $product-price: #a3bbc8;
 $gallery-product-bg: #fff;
+$design-title: #1a1a1a;
 $gallery-design-bg:#f8f8f8;
 $gallery-design-bg-cover:$bg-other;
 
@@ -75,4 +76,12 @@ $banner-text: $default;
 %Rubik-400 {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+}
+
+@function max ($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min ($numbers...) {
+  @return m#{i}n(#{$numbers});
 }

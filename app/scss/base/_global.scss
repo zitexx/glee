@@ -37,24 +37,65 @@ body {
   cursor: pointer;
   background-color: transparent;
 
-  &__circle {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding-top: 4px;
-    background-color: $btn-cycle-bg;
-    fill: $btn-cycle;
-    transition: all 0.3s;
+  &--view {
 
-    &:hover {
-      background-color: $btn-cycle;
-      fill: $btn-cycle-bg;
+    &--circle {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      padding-top: 6px;
+      background-color: $btn-cycle-bg;
+      fill: $btn-cycle;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $btn-cycle;
+        fill: $btn-cycle-bg;
+      }
     }
 
-    &-svg {
-      width: 18px;
-      height: 18px;
+    &--rectangle {
+      position: relative;
+      display: block;
+      padding: 20px;
+      border: 1px solid $btn-link-color;
+      border-radius: 5px;
+      @extend %Rubik-500;
+      font-size: 15px;
+      color: $btn-link-color;
+      max-width: 200px;
+      background-color: $btn-link-bg;
+      transition: all 0.5s;
 
+      &::after {
+        content: '';
+        mask: url('../../images/sprite.svg#arrow') no-repeat 50% 50%;
+        position: absolute;
+        right: 20px;
+        width: 22px;
+        height: 20px;
+        background-color: $btn-link-color;
+        transition: all 0.4s;
+      }
+
+      &:hover {
+        &::after {
+          width: 32px;
+          height: 30px;
+          top: 27%;
+          transform: rotate(180deg);
+        }
+      }
+
+
+    }
+  }
+
+  &__svg {
+    width: 18px;
+    height: 18px;
+
+    &--size {
       &--big {
         width: 22px;
         height: 27px;
@@ -63,60 +104,23 @@ body {
   }
 }
 
-.btn-link {
-  position: relative;
-  display: block;
-  padding: 20px;
-  border: 1px solid $btn-link-color;
-  border-radius: 5px;
-  @extend %Rubik-500;
-  font-size: 15px;
-  color: $btn-link-color;
-  max-width: 200px;
-  background-color: $btn-link-bg;
-  transition: all 0.7s;
-
-
-  &:hover {
-    &::after {
-      width: 32px;
-      height: 30px;
-      top: 27%;
-      transform: rotate(180deg);
-    }
-  }
-
-  &::after {
-    content: '';
-    mask: url('../../images/sprite.svg#arrow') no-repeat 50% 50%;
-    position: absolute;
-    right: 20px;
-    width: 22px;
-    height: 20px;
-    background-color: $btn-link-color;
-    transition: all 0.7s;
-  }
-
-}
-
-button {
-  outline: transparent;
-}
-
-a {
-  color: $text;
-  transition: color 0.3s;
-
-
-  &:hover {
-    color: $h2-color;
-  }
-}
-
-h2 {
-  font-size: 36px;
-  line-height: 1.2;
+.title {
   @extend %DMSans-700;
   color: $h2-color;
-  margin-bottom: 28px;
+
+  &--size {
+    &--h2 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+
+    &--h5 {
+      @extend %DMSans-500;
+      font-size: 18px;
+      color: $h5-color;
+      line-height: 1.25;
+
+    }
+  }
 }
