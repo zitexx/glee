@@ -19,7 +19,7 @@
 
   &__link {
     &::before {
-      content: url('../../images/sprite.svg#video-cycle-0');
+      content: url('/images/sprite.svg#video-cycle-0');
       @extend .video__play;
       width: 100px;
       height: 100px;
@@ -33,7 +33,7 @@
     }
 
     &::after {
-      content: url('../../images/sprite.svg#video-cycle-1');
+      content: url('/images/sprite.svg#video-cycle-1');
       @extend .video__play;
       width: 100px;
       height: 100px;

@@ -27,7 +27,7 @@
     position: relative;
 
     &::after {
-      content: url('../../images/sprite.svg#arrow_all');
+      content: url('/images/sprite.svg#arrow_all');
       position: absolute;
       width: 13px;
       right: 0;

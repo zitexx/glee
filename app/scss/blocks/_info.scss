@@ -28,20 +28,20 @@
     &--icon {
       &--time {
         &::after {
-          mask: url('../../images/sprite.svg#time') no-repeat 50% 50%;
+          mask: url('/images/sprite.svg#time') no-repeat 50% 50%;
         }
       }
 
 
       &--delivery {
         &::after {
-          mask: url('../../images/sprite.svg#delivery') no-repeat 50% 50%;
+          mask: url('/images/sprite.svg#delivery') no-repeat 50% 50%;
         }
       }
 
       &--pay {
         &::after {
-          mask: url('../../images/sprite.svg#pay') no-repeat 50% 50%;
+          mask: url('/images/sprite.svg#pay') no-repeat 50% 50%;
         }
       }
     }

@@ -1,20 +1,28 @@
-@import 'base/vars'; //переменный для цвета и шрифта, кусочки кода
+@import 'base/vars';
 @import 'base/fonts';
 @import 'base/reset';
-@import 'base/global'; // глобальные стили
+@import 'base/global';
 @import 'base/libs';
-@import 'components/btn';
-@import 'sections/header';
-@import 'components/home-slider';
-@import 'components/info';
-@import 'components/mixitup';
-@import 'components/widget/widget';
-@import 'components/widget/product-items';
-@import 'components/features';
-@import 'components/widget/category-items';
-@import 'components/video';
-@import 'components/article';
-@import 'components/clients';
-@import 'sections/blog';
-@import 'sections/footer';
-@import 'components/subscribe-form';
+@import 'base/btn';
+
+@import 'blocks/header';
+@import 'blocks/home-slider';
+@import 'blocks/info';
+
+@import 'blocks/widget/mixitup';
+@import 'blocks/widget/widget';
+@import 'blocks/widget/product-items';
+@import 'blocks/widget/category-items';
+
+@import 'blocks/features/features';
+@import 'blocks/features/product-select';
+
+@import 'blocks/video';
+
+@import 'blocks/blog/article';
+@import 'blocks/blog/blog';
+
+@import 'blocks/clients';
+
+@import 'blocks/footer/footer';
+@import 'blocks/footer/subscribe-form';

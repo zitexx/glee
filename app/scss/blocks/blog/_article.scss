@@ -24,6 +24,7 @@
     @extend %Rubik-400;
     color: #222933;
     font-size: 12px;
+
   }
 
   &__date {
@@ -31,11 +32,23 @@
   }
 
   &__link-date {
-    margin: 0 25px 0 13px;
+    margin-right: 25px;
+
+    &::before {
+      content: url('/images/sprite.svg#calendar');
+      display: inline-block;
+      height: auto;
+      width: 13px;
+      vertical-align: middle;
+    }
   }
 
   &__link-author {
-    @extend .article__link-date
+    @extend .article__link-date;
+
+    &::before {
+      content: url('/images/sprite.svg#author');
+    }
   }
 
   &__img {

@@ -35,7 +35,7 @@
 
       &::after {
         content: '';
-        mask: url('../../images/sprite.svg#arrow') no-repeat 50% 50%;
+        mask: url('/images/sprite.svg#arrow') no-repeat 50% 50%;
         position: absolute;
         right: 20px;
         width: 22px;
