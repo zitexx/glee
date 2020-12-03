@@ -3,14 +3,15 @@
 @import 'base/reset';
 @import 'base/global'; // глобальные стили
 @import 'base/libs';
+@import 'components/btn';
 @import 'sections/header';
 @import 'components/home-slider';
 @import 'components/info';
 @import 'components/mixitup';
-@import 'sections/widget';
-@import 'components/product-items';
+@import 'components/widget/widget';
+@import 'components/widget/product-items';
 @import 'components/features';
-@import 'components/category-items';
+@import 'components/widget/category-items';
 @import 'components/video';
 @import 'components/article';
 @import 'components/clients';
