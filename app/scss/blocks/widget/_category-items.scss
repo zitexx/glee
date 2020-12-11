@@ -1,10 +1,8 @@
 .category-items {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 35px 30px;
 }
 
-.category-select {
+.category-item {
   position: relative;
   min-height: 246px;
   padding: 28px 35px;
@@ -13,14 +11,22 @@
   background-position: 100px 90px;
   border-radius: 10px;
   transition: background-color 0.3s;
+  overflow: hidden;
+  z-index: 0;
 
-  &--ver2 {
-    background-position: 80% center;
+  &__img {
+    position: absolute;
+    bottom: 40px;
+    right: -90px;
+    z-index: -1;
+    object-fit: cover;
+
+    &--ver3 {
+      top: 50px;
+      right: 10%;
+    }
   }
 
-  &--ver3 {
-    background-position: 90% center;
-  }
 
   &:hover {
     background-color: $gallery-design-bg-cover;
@@ -46,4 +52,5 @@
     left: 0;
     font-size: 0;
   }
+
 }

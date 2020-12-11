@@ -8,10 +8,10 @@
   &__input {
     background-color: $bg-other;
     outline: transparent;
-    max-width: 170px;
+    max-width: 168px;
     border: none;
     padding: 9px 17px;
-    margin-left: -5px;
+    margin-left: -4px;
 
     &::placeholder {
       font-size: 12px;
@@ -21,6 +21,11 @@
 
     &:focus {
       outline: 1px solid $text;
+      outline-offset: -2px;
+
+      &::placeholder {
+        color: #cecece
+      }
     }
   }
 

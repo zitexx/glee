@@ -3,6 +3,7 @@ $default: #243f4d;
 $text: #7b7b7b;
 $bg-other: #fef7f0;
 $h2-color: #191919;
+$h2-color-blue: $default;
 $h5-color: #262626;
 
 // BUTTON 
@@ -28,9 +29,13 @@ $banner-bg: $bg-other;
 $banner-title: $default;
 $banner-text: $default;
 
+//TITLE-box
+$bg-box: #edf1f4;
+$title-box: #222933;
 
 
 //MIXIN
+
 @mixin btn-cycle($bg-color, $fill) {
   background-color: $bg-color;
   fill: $fill;
@@ -68,6 +73,11 @@ $banner-text: $default;
   font-weight: 700;
 }
 
+%Rubik-700 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
 %Rubik-500 {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -76,6 +86,11 @@ $banner-text: $default;
 %Rubik-400 {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+}
+
+%Rubik-300 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
 
 @function max ($numbers...) {

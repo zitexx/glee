@@ -1,0 +1,29 @@
+.statistic {
+  padding: 75px 0;
+  color: $default;
+  background-color: #fcd7b6;
+  margin-bottom: 65px;
+
+  &__item {
+    margin-top: 40px;
+    padding-top: 50px;
+    position: relative;
+  }
+
+  .statistic &__items {
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 73px 0 38px;
+  }
+
+  &__text {
+    @extend %DMSans-700;
+    font-size: 18px;
+
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

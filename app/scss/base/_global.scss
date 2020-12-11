@@ -32,25 +32,14 @@ body {
   display: flex;
 }
 
-
-
 .title {
   @extend %DMSans-700;
   color: $h2-color;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 28px;
 
-  &--size {
-    &--h2 {
-      font-size: 36px;
-      line-height: 1.2;
-      margin-bottom: 28px;
-    }
-
-    &--h5 {
-      @extend %DMSans-500;
-      font-size: 18px;
-      color: $h5-color;
-      line-height: 1.25;
-
-    }
+  &--blue {
+    color: $h2-color-blue;
   }
 }

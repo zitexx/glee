@@ -4,25 +4,46 @@
 @import 'base/global';
 @import 'base/libs';
 @import 'base/btn';
+@import 'base/icons';
+@import 'base/label-check';
 
 @import 'blocks/header';
+
+//HOME
 @import 'blocks/home-slider';
 @import 'blocks/info';
+@import 'blocks/video';
 
+//ABOUT
+@import 'blocks/about/title-box';
+@import 'blocks/about/mission';
+@import 'blocks/about/statistic';
+@import 'blocks/about/team';
+
+
+//WIDGET
 @import 'blocks/widget/mixitup';
 @import 'blocks/widget/widget';
 @import 'blocks/widget/product-items';
 @import 'blocks/widget/category-items';
 
+//FEATURE
 @import 'blocks/features/features';
 @import 'blocks/features/product-select';
 
-@import 'blocks/video';
+//LOGIN
+@import 'blocks/login';
 
+//TERMS
+@import 'blocks/terms';
+
+//BLOG
 @import 'blocks/blog/article';
 @import 'blocks/blog/blog';
 
+//CLIENT
 @import 'blocks/clients';
 
+//FOOTER
 @import 'blocks/footer/footer';
 @import 'blocks/footer/subscribe-form';

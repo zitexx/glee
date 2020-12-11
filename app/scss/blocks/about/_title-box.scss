@@ -1,0 +1,23 @@
+.title-box {
+  background-color: $bg-box;
+  padding: 25px 0 30px;
+  text-align: center;
+
+  &__title {
+    color: $title-box;
+    margin-bottom: 5px;
+    @extend %Rubik-300;
+  }
+}
+
+.breadcrumb {
+  &__item {
+    display: inline;
+    color: $title-box;
+
+    +.breadcrumb__item::before {
+      content: "/";
+    }
+
+  }
+}

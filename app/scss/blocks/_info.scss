@@ -25,26 +25,26 @@
       background-color: $info-icon-color;
     }
 
-    &--icon {
-      &--time {
-        &::after {
-          mask: url('/images/sprite.svg#time') no-repeat 50% 50%;
-        }
-      }
 
-
-      &--delivery {
-        &::after {
-          mask: url('/images/sprite.svg#delivery') no-repeat 50% 50%;
-        }
-      }
-
-      &--pay {
-        &::after {
-          mask: url('/images/sprite.svg#pay') no-repeat 50% 50%;
-        }
+    &--time {
+      &::after {
+        mask: url('/images/sprite.svg#time') no-repeat 50% 50%;
       }
     }
+
+
+    &--delivery {
+      &::after {
+        mask: url('/images/sprite.svg#delivery') no-repeat 50% 50%;
+      }
+    }
+
+    &--pay {
+      &::after {
+        mask: url('/images/sprite.svg#pay') no-repeat 50% 50%;
+      }
+    }
+
   }
 
   &__title {
@@ -57,11 +57,6 @@
     font-size: 16px;
     @extend %DMSans-500;
     line-height: 1.9;
-    max-width: 215px;
-
-    &:nth-child(2) {
-      max-width: 225px;
-    }
-
+    max-width: 220px;
   }
 }

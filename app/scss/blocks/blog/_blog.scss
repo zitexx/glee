@@ -1,10 +1,23 @@
 .blog {
-  padding-top: 110px;
+  padding-top: 90px;
+  background-color: $bg-other;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    height: 423px;
+    width: 100%;
+    z-index: -1;
+  }
 
   &__inner {
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
 
@@ -18,7 +31,7 @@
     grid-gap: 30px;
   }
 
-  .view-all {
+  &__view-all {
     font-size: 16px;
     @extend %DMSans-700;
     color: #262626;

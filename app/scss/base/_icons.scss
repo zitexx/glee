@@ -1,0 +1,71 @@
+//ABOUT MISSION
+.icon-project::before {
+  content: url("../images/sprite.svg#project");
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 28px;
+  left: 0;
+}
+
+.icon-revenue::before {
+  content: url("../images/sprite.svg#revenue");
+  @extend .icon-project;
+}
+
+.icon-awards::before {
+  content: url("../images/sprite.svg#awards");
+  @extend .icon-project;
+}
+
+//ABOUT STATISTIC
+
+.icon-monitor::before {
+  content: url('../images/sprite.svg#monitor');
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.icon-monitor::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(163, 187, 200);
+  width: 35px;
+  height: 35px;
+  top: 0;
+  right: 35px;
+  z-index: 0;
+}
+
+.icon-delivery2::before {
+  content: url('../images/sprite.svg#delivery2');
+  @extend .icon-monitor;
+}
+
+.icon-delivery2::after {
+  @extend .icon-monitor;
+}
+
+.icon-time2::before {
+  content: url('../images/sprite.svg#time2');
+  @extend .icon-monitor;
+}
+
+.icon-time2::after {
+  @extend .icon-monitor;
+}
+
+.icon-brand::before {
+  content: url('../images/sprite.svg#brand');
+  @extend .icon-monitor;
+}
+
+.icon-brand::after {
+  @extend .icon-monitor;
+}

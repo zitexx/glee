@@ -1,0 +1,73 @@
+.mission {
+  padding: 120px 0;
+  color: $default;
+
+  &__img {
+    margin-right: 45px;
+    max-width: 570px;
+    object-fit: cover;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__number {
+    display: inline;
+    @extend %Rubik-700;
+    font-size: 140px;
+    color: $product-price;
+    margin-right: 25px;
+  }
+
+  &__number-items {
+    display: inline-block;
+
+  }
+
+  &__number-item {
+    @extend %Rubik-400;
+    font-size: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 60px;
+  }
+
+  &__content &__result-items {
+    display: flex;
+    padding-top: 20px;
+    border-top: 3px solid #ebeef3;
+  }
+
+  &__result-item {
+    padding: 15px 20px 15px 60px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+      border-right: 1px solid #ebeef3;
+    }
+  }
+
+  &__content {
+    padding-top: 40px;
+  }
+
+  &__result-text {
+    @extend %DMSans-700;
+    font-size: 16px;
+    color: #4c4c4c;
+  }
+}

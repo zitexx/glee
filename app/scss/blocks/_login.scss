@@ -1,0 +1,53 @@
+.modal {
+  color: $default;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 120px 0 90px;
+  @extend %Rubik-400;
+
+  &__label {
+    display: block;
+    margin-bottom: 26px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  &__btn {
+    background-color: $btn-cycle;
+    color: #fff;
+    margin: 37px 0 12px;
+
+    &:hover {
+      background-color: #92b3c5;
+    }
+  }
+
+  &__inner {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f6f6f6;
+  }
+
+  &__register {
+    text-align: center;
+  }
+
+  &__question {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    border: 2px solid $btn-cycle;
+
+    &:hover {
+      background-color: $btn-cycle;
+      color: #fff;
+    }
+  }
+}

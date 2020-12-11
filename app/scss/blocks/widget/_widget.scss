@@ -1,7 +1,28 @@
-.widget {
+.product-week {
   padding: 62px 0;
+
 
   &__title {
     text-align: center;
   }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+  }
+}
+
+.category {
+  @extend .product-week;
+
+  &__title {
+    @extend .product-week__title;
+  }
+
+  &__items {
+    @extend .product-week__items;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }

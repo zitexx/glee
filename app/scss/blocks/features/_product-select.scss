@@ -2,8 +2,12 @@
   flex-direction: column;
   justify-content: center;
   background-color: $banner-bg;
-  padding: 80px 145px 80px 430px;
+  padding: 95px 120px 80px 430px;
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 
 
   &__img {
