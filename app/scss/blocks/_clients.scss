@@ -15,4 +15,9 @@
       margin-right: 99px;
     }
   }
+
+  &__logo {
+    max-height: 100px;
+    object-fit: cover;
+  }
 }

@@ -47,8 +47,6 @@
     }
   }
 
-
-
   &__stick {
     padding: 5px 30px;
     background-color: rgb(163, 187, 200);
@@ -61,8 +59,13 @@
   &__title {
     padding: 25px 2px 5px;
     max-width: 295px;
-    min-height: 95px;
+    height: 94px;
     font-size: 18px;
     margin-bottom: 7px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
+
 }

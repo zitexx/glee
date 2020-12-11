@@ -43,3 +43,11 @@ body {
     color: $h2-color-blue;
   }
 }
+
+.logo {
+  &__img {
+    max-height: 120px;
+    // object-fit: cover;
+    // object-position: center;
+  }
+}
