@@ -47,7 +47,17 @@ body {
 .logo {
   &__img {
     max-height: 120px;
-    // object-fit: cover;
+    object-fit: cover;
     // object-position: center;
+  }
+}
+
+.dollar {
+  &::before {
+    content: "$";
+  }
+
+  &::after {
+    content: ".00";
   }
 }

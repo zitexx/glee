@@ -31,6 +31,14 @@
 @import 'blocks/features/features';
 @import 'blocks/features/product-select';
 
+//CATALOG
+@import 'blocks/catalog/catalog';
+@import 'blocks/catalog/sidebar/sidebar';
+@import 'blocks/catalog/sidebar/filter';
+@import 'blocks/catalog/sidebar/rangeslider';
+@import 'blocks/catalog/sidebar/recent-product';
+@import 'blocks/catalog/product-list/product-list';
+
 //LOGIN
 @import 'blocks/login';
 

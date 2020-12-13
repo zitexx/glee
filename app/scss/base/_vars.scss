@@ -33,6 +33,9 @@ $banner-text: $default;
 $bg-box: #edf1f4;
 $title-box: #222933;
 
+//RECENT-PRODUCT
+$rp-color-text: #333;
+
 
 //MIXIN
 
@@ -52,6 +55,13 @@ $title-box: #222933;
   }
 }
 
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
 
 %DMSans-400 {
   font-family: 'DM Sans', sans-serif;
