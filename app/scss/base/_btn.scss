@@ -108,3 +108,83 @@
   font-size: 18px;
   transition: background-color 0.3s;
 }
+
+.btn-rectangle2 {
+  @extend %Rubik-400;
+  font-size: 16px;
+  color: $default;
+  padding: 16px 21px;
+  border: 1px solid $product-price;
+  transition: background-color 0.3s;
+
+  &:hover {
+    color: #fff;
+    background-color: $product-price;
+  }
+
+  &--active {
+    color: #fff;
+    background-color: $product-price;
+  }
+}
+
+
+
+.btn-rectangle3 {
+  @extend %Rubik-400;
+  font-size: 16px;
+  color: #fff;
+  background-color: $product-price;
+  min-height: 50px;
+  padding: 0px 21px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color, border-radius 0.3s;
+
+  &__svg {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &--white {
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    .btn-rectangle3__svg {
+      fill: $product-price;
+    }
+
+    &:hover {
+      background-color: $product-price;
+      border-radius: 10px;
+
+      .btn-rectangle3__svg {
+        fill: #fff;
+      }
+    }
+
+  }
+}
+
+.none:hover {
+  border-radius: 10px;
+
+  .btn-rectangle3__svg {
+    display: none;
+  }
+
+  .btn-rectangle3__text--hidden {
+    display: inline-block;
+  }
+
+  &~.btn-rectangle3 {
+    display: none;
+  }
+}

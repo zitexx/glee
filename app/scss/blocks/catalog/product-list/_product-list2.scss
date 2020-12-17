@@ -1,0 +1,98 @@
+.product-list {
+
+
+  &__items {
+
+
+    &--list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 40px 30px;
+      padding-bottom: 120px;
+
+      .product-item {
+        background-color: transparent;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: left;
+        text-align: left;
+        padding: 0;
+
+
+
+        &__btn {
+          display: none;
+        }
+
+        &__content {
+          justify-content: center;
+          padding-left: 58px;
+          overflow: hidden;
+
+        }
+
+        &__title {
+          font-size: 40px;
+          color: #333;
+
+          @extend %Rubik-400;
+        }
+
+        &__price {
+          font-size: 30px;
+          color: #333;
+          @extend %Rubik-400;
+          margin-bottom: 25px;
+
+        }
+
+        &__top {
+          min-width: 370px;
+          height: 100%;
+          border-top: 2px solid #f2f2f2;
+          border-bottom: 2px solid #f2f2f2;
+          margin-bottom: 0;
+          padding: 80px 0;
+        }
+
+        &__img {
+          max-width: 370px;
+          max-height: 500px;
+        }
+
+        &__rate {
+          display: block;
+          margin-bottom: 35px;
+        }
+
+        &__text {
+          display: block;
+          @extend %Rubik-400;
+          font-size: 16px;
+          color: $default;
+          margin-bottom: 30px;
+        }
+
+        &__wrapper {
+          position: relative;
+        }
+
+        &__wrapper button {
+          margin-right: 10px;
+          width: max-content;
+
+        }
+      }
+
+      // .product-item__btn {
+      //   display: none;
+      // }
+
+      +.pagination {
+        justify-content: left;
+      }
+
+
+    }
+  }
+}

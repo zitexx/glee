@@ -19,6 +19,16 @@
     margin-bottom: 45px;
   }
 
+  &__rate {
+    display: none;
+  }
+
+  &__text {
+    display: none;
+  }
+
+
+
   &__btn {
     position: absolute;
     bottom: 155px;

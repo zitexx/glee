@@ -1,0 +1,10 @@
+.pagination {
+  justify-content: center;
+
+  &__item {
+    &:not(:last-child) {
+      padding-right: 13px;
+    }
+  }
+
+}
