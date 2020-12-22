@@ -1,0 +1,47 @@
+.recent-article {
+  max-width: 270px;
+
+  &__item {
+    position: relative;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__inner {
+    min-width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 0 20px;
+  }
+
+  &__name {
+    @extend %Rubik-400;
+    color: $rp-color-text;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: #9a9a9a;
+
+
+  }
+
+  .date-icon::before {
+    background-color: #9a9a9a;
+  }
+}

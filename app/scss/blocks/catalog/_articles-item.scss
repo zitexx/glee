@@ -1,0 +1,62 @@
+.articles-item {
+
+  +.articles-item {
+    margin-top: 50px;
+  }
+
+  &__img {
+    width: 830px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__inner {
+    position: relative;
+    margin-bottom: 35px;
+  }
+
+  &__info {
+    position: absolute;
+    display: inline;
+    padding: 25px;
+    background-color: $product-price;
+    bottom: 0;
+    font-size: 12px;
+  }
+
+  &__date {
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 20px;
+
+    &::before {
+      background-color: #fff;
+    }
+  }
+
+  &__author {
+    @extend .articles-item__date;
+    margin-right: 0px;
+  }
+
+  &__name {
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.7;
+  }
+
+  &__view {
+    border-radius: 0;
+    color: $product-price;
+    border-color: $product-price;
+
+    &::after {
+      background-color: $product-price;
+    }
+  }
+
+}

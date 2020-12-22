@@ -1,5 +1,8 @@
 .pagination {
   justify-content: center;
+  align-items: center;
+  min-height: 55px;
+  margin: 5px 0;
 
   &__item {
     &:not(:last-child) {

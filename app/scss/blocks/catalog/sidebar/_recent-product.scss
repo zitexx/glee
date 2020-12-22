@@ -39,16 +39,8 @@
     color: $rp-color-text;
   }
 
-  &__link {
-    position: absolute;
-    font-size: 0px;
-    width: 100%;
-    height: 100%;
-    color: red;
-    z-index: 100;
+  .jq-ry-container {
+    padding: 0;
   }
-}
 
-.jq-ry-container {
-  padding: 0;
 }

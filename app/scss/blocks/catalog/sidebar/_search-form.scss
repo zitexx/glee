@@ -1,0 +1,28 @@
+.search-form {
+  position: relative;
+
+  &__input {
+    width: 269px;
+    height: 43px;
+    border: 1px solid $bg-box;
+    border-radius: 5px;
+    outline: transparent;
+    padding: 0 50px 0 10px;
+  }
+
+  &__btn {
+    position: absolute;
+    width: 48px;
+    height: 43px;
+    right: 0;
+    border-radius: 5px;
+    background-color: $bg-box;
+    border: none;
+    z-index: 0;
+
+    svg {
+      display: block;
+      margin: auto;
+    }
+  }
+}

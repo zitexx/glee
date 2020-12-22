@@ -1,0 +1,9 @@
+.articles-list {
+  margin-right: 70px;
+  min-width: 830px;
+
+  &__pagination {
+    justify-content: start;
+    margin-top: 75px;
+  }
+}

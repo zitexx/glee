@@ -1,3 +1,7 @@
 .catalog {
   padding: 120px 0;
+
+  &__inner-sb {
+    justify-content: space-between;
+  }
 }

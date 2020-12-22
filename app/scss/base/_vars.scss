@@ -63,6 +63,13 @@ $rp-color-text: #333;
   position: absolute;
 }
 
+%btn {
+  @extend %Rubik-400;
+  font-size: 16px;
+  color: #fff;
+
+}
+
 %DMSans-400 {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;

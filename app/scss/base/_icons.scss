@@ -69,3 +69,29 @@
 .icon-brand::after {
   @extend .icon-monitor;
 }
+
+.date-icon {
+  &::before {
+    content: '';
+    mask: url('/images/sprite.svg#calendar') no-repeat 50% 50%;
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+    background-color: #000;
+  }
+}
+
+.author-icon {
+  &::before {
+    content: '';
+    mask: url('/images/sprite.svg#author') no-repeat 50% 50%;
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+    background-color: #000;
+  }
+}

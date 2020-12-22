@@ -128,16 +128,11 @@
   }
 }
 
-
-
 .btn-rectangle3 {
-  @extend %Rubik-400;
-  font-size: 16px;
-  color: #fff;
+  @extend %btn;
   background-color: $product-price;
   min-height: 50px;
   padding: 0px 21px;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,6 +167,14 @@
 
   }
 }
+
+.btn-rectangle4 {
+  @extend %btn;
+  border-radius: 5px;
+  min-height: 55px;
+  background-color: $product-price;
+}
+
 
 .none:hover {
   border-radius: 10px;

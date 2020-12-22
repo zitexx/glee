@@ -1,0 +1,29 @@
+.tabs-header {
+  margin-bottom: 35px;
+
+  &__list {
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    min-width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $default;
+    background-color: #edf1f4;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &__link--active {
+    color: #fff;
+    background-color: $product-price;
+  }
+}

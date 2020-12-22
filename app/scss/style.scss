@@ -9,6 +9,8 @@
 @import 'base/pagination';
 
 @import 'blocks/header';
+@import 'blocks/tabs-header';
+@import 'blocks/tabs-content';
 
 //HOME
 @import 'blocks/home-slider';
@@ -34,13 +36,24 @@
 
 //CATALOG
 @import 'blocks/catalog/catalog';
+@import 'blocks/catalog/product-list/product-list';
+@import 'blocks/catalog/product-list/product-list2';
+@import 'blocks/catalog/articles-list';
+@import 'blocks/catalog/articles-item';
+
+//SITEBAR
 @import 'blocks/catalog/sidebar/sidebar';
 @import 'blocks/catalog/sidebar/filter';
 @import 'blocks/catalog/sidebar/rangeslider';
 @import 'blocks/catalog/sidebar/recent-product';
-@import 'blocks/catalog/product-list/product-list';
-@import 'blocks/catalog/product-list/product-list2';
+@import 'blocks/catalog/sidebar/recent-article';
+@import 'blocks/catalog/sidebar/search-form';
 
+//PRODUCT-CART
+@import 'blocks/product-cart/product-cart';
+@import 'blocks/product-cart/product-cart__left';
+@import 'blocks/product-cart/product-gallery';
+@import 'blocks/product-cart/product-related';
 
 //LOGIN
 @import 'blocks/login';

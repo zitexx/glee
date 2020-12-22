@@ -11,14 +11,13 @@
       padding-bottom: 120px;
 
       .product-item {
+        min-width: 100%;
         background-color: transparent;
         box-shadow: none;
         flex-direction: row;
         justify-content: left;
         text-align: left;
         padding: 0;
-
-
 
         &__btn {
           display: none;
@@ -28,7 +27,6 @@
           justify-content: center;
           padding-left: 58px;
           overflow: hidden;
-
         }
 
         &__title {
@@ -74,13 +72,13 @@
         }
 
         &__wrapper {
+          display: flex;
           position: relative;
         }
 
         &__wrapper button {
           margin-right: 10px;
           width: max-content;
-
         }
       }
 
