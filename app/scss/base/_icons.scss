@@ -85,13 +85,69 @@
 
 .author-icon {
   &::before {
-    content: '';
     mask: url('/images/sprite.svg#author') no-repeat 50% 50%;
+    @extend .date-icon;
+  }
+}
+
+.reply-icon {
+  &::after {
+    content: '';
+    mask: url('/images/sprite.svg#arrow-right') no-repeat 50% 50%;
     display: inline-block;
-    height: 13px;
-    width: 13px;
-    margin-right: 5px;
-    margin-bottom: -2px;
-    background-color: #000;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    background-color: #565872;
+  }
+}
+
+.input-email-icon {
+  &::after {
+    content: '';
+    mask: url('/images/sprite.svg#input-email') no-repeat 50% 50%;
+    // display: inline-block;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #565872;
+    transition: background-color 0.3s;
+  }
+}
+
+.input-name-icon {
+  &::after {
+    mask: url('/images/sprite.svg#input-name') no-repeat 50% 50%;
+    @extend .input-email-icon;
+    right: 50px;
+  }
+}
+
+.input-text-icon {
+  &::after {
+    mask: url('/images/sprite.svg#input-text') no-repeat 50% 50%;
+    @extend .input-email-icon;
+    top: -110px;
+  }
+}
+
+.search-icon {
+  &::after {
+    content: '';
+    mask: url('/images/sprite.svg#search-form') no-repeat 50% 50%;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #164a7b;
+    transition: background-color 0.3s;
   }
 }

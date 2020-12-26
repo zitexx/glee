@@ -40,6 +40,7 @@
 @import 'blocks/catalog/product-list/product-list2';
 @import 'blocks/catalog/articles-list';
 @import 'blocks/catalog/articles-item';
+@import 'blocks/catalog/article-page';
 
 //SITEBAR
 @import 'blocks/catalog/sidebar/sidebar';
@@ -54,6 +55,11 @@
 @import 'blocks/product-cart/product-cart__left';
 @import 'blocks/product-cart/product-gallery';
 @import 'blocks/product-cart/product-related';
+
+//COMMENTS
+@import 'blocks/comments/comments';
+@import 'blocks/comments/leave-comment';
+
 
 //LOGIN
 @import 'blocks/login';

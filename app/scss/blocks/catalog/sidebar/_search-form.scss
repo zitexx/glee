@@ -8,21 +8,32 @@
     border-radius: 5px;
     outline: transparent;
     padding: 0 50px 0 10px;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: #a3bbc8;
+    }
   }
 
   &__btn {
     position: absolute;
     width: 48px;
-    height: 43px;
-    right: 0;
-    border-radius: 5px;
+    height: 41px;
+    right: 2px;
+    top: 1px;
+    border-radius: 4px;
     background-color: $bg-box;
     border: none;
     z-index: 0;
+    cursor: pointer;
+    transition: background-color 0.3s, width 0.3s;
 
-    svg {
-      display: block;
-      margin: auto;
+    &:hover {
+      background-color: #a3bbc8;
+
+      &::after {
+        background-color: #fff;
+      }
     }
   }
 }

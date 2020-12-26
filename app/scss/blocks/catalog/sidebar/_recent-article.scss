@@ -4,9 +4,14 @@
   &__item {
     position: relative;
     justify-content: space-between;
+    transition: background-color 0.3s;
 
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+
+    &:hover {
+      background-color: #edf1f4;
     }
   }
 
