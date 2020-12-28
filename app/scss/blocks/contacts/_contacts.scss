@@ -1,0 +1,127 @@
+.contact {
+  padding: 120px 0 30px;
+  text-align: center;
+
+  &__subtitle {
+    @extend %Rubik-400;
+    font-size: 16px;
+    color: #a3bbc8;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    color: #436372;
+    margin-bottom: 70px;
+  }
+
+  &__list {}
+
+  &__item {
+    position: relative;
+    text-align: center;
+    background-color: #fbfbfb;
+    padding: 70px 35px 80px;
+    margin-bottom: 120px;
+    flex: 1;
+    outline: transparent;
+    transition: outline 0.1s 0.2s;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:hover {
+      outline: 2px solid #a3bbc8;
+
+      .contact__icon {
+        background-color: #a3bbc8;
+      }
+
+      .contact__icon svg {
+        path {
+          fill: #fff;
+        }
+      }
+
+    }
+  }
+
+  &__name {
+    display: block;
+    @extend %DMSans-700;
+    font-size: 20px;
+    color: #222222;
+    margin-bottom: 25px;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  &__info {
+    @extend %Rubik-400;
+    color: #565872;
+    font-size: 16px;
+  }
+
+  &__form {
+    text-align: left;
+    margin-right: 50px;
+    flex: 1;
+  }
+
+  &__input {
+    background-color: #fbfbfb;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  &__textaria {
+    @extend .contact__input;
+    min-height: 175px;
+  }
+
+  .input-text-icon {
+    &::after {
+      top: -175px;
+    }
+  }
+
+  &__btn {
+    border-radius: 5px;
+    transition: border-radius 0.1s;
+
+    &:hover {
+      border-radius: 0;
+    }
+  }
+
+  #map {
+    flex: 1;
+    max-width: 500px;
+    min-height: 335px;
+  }
+
+  &__link {
+    @extend .contact__info;
+  }
+
+  &__icon {
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    background-color: #fff;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 60px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.7s;
+  }
+
+  svg {
+    path {
+      fill: #b7cad4;
+      transition: fill 0.3s;
+    }
+  }
+}

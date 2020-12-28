@@ -1,4 +1,4 @@
-.leave-comment {
+.send-form {
 
   &__title {}
 
@@ -42,7 +42,7 @@
         color: #e7e7e7;
       }
 
-      &+.leave-comment__label::after {
+      &+.send-form__label::after {
         background-color: #e7e7e7;
       }
 
@@ -57,7 +57,7 @@
   }
 
   &__textaria {
-    @extend .leave-comment__input;
+    @extend .send-form__input;
     width: 100%;
     min-height: 120px;
     margin-bottom: 40px;
