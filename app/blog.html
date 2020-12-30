@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -106,7 +106,7 @@
       </ul>
     </div>
 
-    <section class="catalog">
+    <div class="catalog">
       <div class="container">
         <div class="catalog__inner-sb di-flex">
 
@@ -116,12 +116,12 @@
               <div class="articles-item__inner">
                 <img class="articles-item__img" src="images/articles/1.jpg" alt="">
                 <div class="articles-item__info">
-                  <time class="articles-item__date date-icon">28 january, 2020</time>
+                  <time class="articles-item__date date-icon" datetime="2020-01-28">28 january, 2020</time>
                   <span class="articles-item__author author-icon">by admin</span>
                 </div>
               </div>
 
-              <div class="articles-item__name title">Fonsectetur adipisicing elit,</div>
+              <h3 class="articles-item__name title">Fonsectetur adipisicing elit,</h3>
               <p class="articles-item__desc text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                 labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -134,12 +134,12 @@
               <div class="articles-item__inner">
                 <img class="articles-item__img" src="images/articles/2.jpg" alt="">
                 <div class="articles-item__info">
-                  <time class="articles-item__date date-icon">28 january, 2020</time>
+                  <time class="articles-item__date date-icon" datetime="2020-01-28">28 january, 2020</time>
                   <span class="articles-item__author author-icon">by admin</span>
                 </div>
               </div>
 
-              <div class="articles-item__name title">Fonsectetur adipisicing elit,</div>
+              <h3 class="articles-item__name title">Fonsectetur adipisicing elit,</h3>
               <p class="articles-item__desc text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                 labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -152,12 +152,12 @@
               <div class="articles-item__inner">
                 <img class="articles-item__img" src="images/articles/4.jpg" alt="">
                 <div class="articles-item__info">
-                  <time class="articles-item__date date-icon">28 january, 2020</time>
+                  <time class="articles-item__date date-icon" datetime="2020-01-28">28 january, 2020</time>
                   <span class="articles-item__author author-icon">by admin</span>
                 </div>
               </div>
 
-              <div class="articles-item__name title">Fsectetur adipisicing tempor incididunt </div>
+              <h3 class="articles-item__name title">Fsectetur adipisicing tempor incididunt </h3>
               <p class="articles-item__desc text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                 labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -170,12 +170,12 @@
               <div class="articles-item__inner">
                 <img class="articles-item__img" src="images/articles/5.jpg" alt="">
                 <div class="articles-item__info">
-                  <time class="articles-item__date date-icon">28 january, 2020</time>
+                  <time class="articles-item__date span-date" datetime="2020-01-28">28 january, 2020</time>
                   <span class="articles-item__author author-icon">by admin</span>
                 </div>
               </div>
 
-              <div class="articles-item__name title">vonsectetur adipisicing elit</div>
+              <h3 class="articles-item__name title">vonsectetur adipisicing elit</h3>
               <p class="articles-item__desc text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                 labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -188,7 +188,7 @@
             <div class="articles-list__pagination pagination di-flex">
               <ul class="pagination__list di-flex">
                 <li class="pagination__item">
-                  <span href="#" class="pagination__link btn-rectangle2 btn-rectangle2--active ">
+                  <span class="pagination__link btn-rectangle2 btn-rectangle2--active ">
                     1
                   </span>
                 </li>
@@ -218,7 +218,7 @@
 
               <form class="search-form" action="#">
 
-                <input class="search-form__input" type="text" name="search" search-input="">
+                <input class="search-form__input" type="text" name="search">
 
                 <button class="search-form__btn">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
@@ -246,9 +246,10 @@
 
                     <label class="filter-box__label">
                       <input class="filter-box__input" type="checkbox">
-                      <div class="filter-box__inner">
+
+                      <span class="filter-box__inner">
                         <span class="filter-box__variant category-icon">Chair</span>
-                      </div>
+                      </span>
                     </label>
 
                   </li>
@@ -257,9 +258,10 @@
 
                     <label class="filter-box__label">
                       <input class="filter-box__input" type="checkbox">
-                      <div class="filter-box__inner">
+
+                      <span class="filter-box__inner">
                         <span class="filter-box__variant category-icon">Table</span>
-                      </div>
+                      </span>
                     </label>
 
                   </li>
@@ -268,9 +270,10 @@
 
                     <label class="filter-box__label">
                       <input class="filter-box__input" type="checkbox">
-                      <div class="filter-box__inner">
+
+                      <span class="filter-box__inner">
                         <span class="filter-box__variant category-icon">Lamp</span>
-                      </div>
+                      </span>
                     </label>
 
                   </li>
@@ -279,9 +282,10 @@
 
                     <label class="filter-box__label">
                       <input class="filter-box__input" type="checkbox">
-                      <div class="filter-box__inner">
+
+                      <span class="filter-box__inner">
                         <span class="filter-box__variant category-icon">Watch</span>
-                      </div>
+                      </span>
                     </label>
 
                   </li>
@@ -290,9 +294,10 @@
 
                     <label class="filter-box__label">
                       <input class="filter-box__input" type="checkbox">
-                      <div class="filter-box__inner">
+
+                      <span class="filter-box__inner">
                         <span class="filter-box__variant category-icon">Clock</span>
-                      </div>
+                      </span>
                     </label>
 
                   </li>
@@ -385,7 +390,7 @@
 
         </div>
       </div>
-    </section>
+    </div>
 
     <div class="clients">
 
@@ -505,7 +510,7 @@
           </span>
 
           <p>Subscribe by our newsletter and get
-            update protidin.
+            upspan protidin.
           </p>
 
           <form class="subscribe-form" action="#">
